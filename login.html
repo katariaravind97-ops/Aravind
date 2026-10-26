@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Continue to the Orchard & Co. fruit collection.">
+  <title>Log in — Orchard & Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="login-page">
+  <div class="announcement">A little sunshine, delivered free on orders over ₹999 <span>✳</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✳</span> orchard<span>&co.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Shop</a><a href="services.html">Our services</a><a href="contact.html">Contact</a></nav>
+    <div class="header-actions"><a class="login-link active" href="login.html">Log in</a><button class="cart-button" type="button" aria-label="Shopping bag, 0 items">Bag <span class="cart-count">0</span></button></div>
+  </header>
+  <main class="login-layout">
+    <div class="login-art"><div><p class="eyebrow">YOUR LITTLE CORNER OF THE ORCHARD</p><h1>Good to have<br>you <em>back.</em></h1><p>Your favourites, your orders, your next box of sunshine—all in one happy place.</p></div><div class="login-fruit" aria-hidden="true">🍊 🍋 🍓</div></div>
+    <section class="login-card">
+      <p class="eyebrow">WELCOME BACK</p><h2>Log in to your account</h2><p class="login-subtitle">Your fruit basket is waiting.</p>
+      <form class="login-form">
+        <label for="login-email">Email address</label><input id="login-email" type="email" autocomplete="username" placeholder="you@example.com" required>
+        <label for="login-password">Password</label><input id="login-password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+        <button class="button button-dark login-submit" type="submit">Log in <span>→</span></button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+      <div class="demo-credentials"><b>Quick demo sign-in</b><p>Enter any valid email address and password to continue to the fruit collection.</p><small>This demo does not verify or store your credentials.</small></div>
+      <p class="login-help">Need a hand? <a href="contact.html">Talk to us</a></p>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">✳</span> orchard<span>&co.</span></a><p>Fruit for the feel-good days.</p><small>© 2026 Orchard & Co. Made with a little sunshine.</small></footer>
+</body>
+</html>
