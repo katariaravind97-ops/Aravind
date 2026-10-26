@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (loginForm) {
     loginForm.addEventListener("submit", (event) => {
       event.preventDefault();
-      window.location.href = "index.html#shop";
+      sessionStorage.setItem("orchard-demo-signed-in", "true");
+      window.location.href = "home.html#shop";
     });
   }
 

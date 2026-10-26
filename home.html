@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fresh-picked fruit, delivered with a little sunshine. Shop seasonal fruit boxes from Orchard & Co.">
+  <title>Orchard & Co. — Fruit that feels good</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script>if (sessionStorage.getItem("orchard-demo-signed-in") !== "true") window.location.replace("login.html");</script>
+</head>
+<body>
+  <div class="announcement">A little sunshine, delivered free on orders over ₹999 <span aria-hidden="true">✳</span></div>
+  <header class="site-header">
+    <a class="brand" href="home.html" aria-label="Orchard and Co. home"><span class="brand-mark">✳</span> orchard<span>&co.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="home.html">Shop</a>
+      <a href="services.html">Our services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="login.html">Log in</a>
+      <button class="cart-button" type="button" aria-label="Shopping bag, 0 items">Bag <span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> GOOD FRUIT. GOOD MOOD.</p>
+        <h1>Fresh from the<br>farm to your <em>table.</em></h1>
+        <p class="hero-intro">Discover a better kind of grocery run: beautiful seasonal fruit, thoughtfully sourced and delivered fresh to your door.</p>
+        <a class="button button-dark" href="#shop">Shop the harvest <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-avatars">● ● ●</span> Trusted by 2,000+ happy homes</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="A colorful bowl of fresh seasonal fruit">
+        <span class="image-sticker">Picked<br>with love <b>♥</b></span>
+        <div class="hero-image-caption"><span>THE GOOD STUFF</span><span>100% natural, always</span></div>
+      </div>
+      <div class="hero-sparkle sparkle-one" aria-hidden="true">✳</div>
+      <div class="hero-sparkle sparkle-two" aria-hidden="true">✦</div>
+    </section>
+
+    <section class="promise-strip" aria-label="Our promises">
+      <div><span>✿</span><p>Picked at peak ripeness</p></div>
+      <div><span>♡</span><p>From farms we know</p></div>
+      <div><span>↗</span><p>At your door in 24 hours</p></div>
+      <div><span>♻</span><p>Kind to the planet</p></div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">FRESH FROM THE FARM</p><h2>Meet your next <em>favourite.</em></h2></div>
+        <a class="text-link" href="#shop">Explore all fruit <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="category-tabs" aria-label="Fruit categories">
+        <button class="category-tab active" type="button" data-filter="all">All the good stuff</button>
+        <button class="category-tab" type="button" data-filter="citrus">Citrus & sunshine</button>
+        <button class="category-tab" type="button" data-filter="berries">Berries & little things</button>
+        <button class="category-tab" type="button" data-filter="tropical">Tropical favourites</button>
+        <button class="category-tab" type="button" data-filter="orchard">Apples & grapes</button>
+        <button class="category-tab" type="button" data-filter="boxes">Fruit boxes</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="citrus">
+          <div class="product-photo product-orange"><span class="product-badge">BESTSELLER</span><img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=800&q=85" alt="Fresh oranges and citrus fruit"></div>
+          <div class="product-info"><div><h3>Sunshine oranges</h3><p>Sweet, juicy & full of joy</p></div><span class="product-price">₹249 <small>/ 6 pcs</small></span></div>
+          <button class="add-button" type="button" data-product="Sunshine oranges">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="berries">
+          <div class="product-photo product-berries"><span class="product-badge badge-pink">JUST PICKED</span><img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=800&q=85" alt="Fresh blueberries ready to eat"></div>
+          <div class="product-info"><div><h3>Blueberry bunch</h3><p>Tiny berries, big smiles</p></div><span class="product-price">₹349 <small>/ 250 g</small></span></div>
+          <button class="add-button" type="button" data-product="Blueberry bunch">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="citrus">
+          <div class="product-photo product-mango"><span class="product-badge badge-green">IN SEASON</span><img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=800&q=85" alt="Golden ripe mangoes"></div>
+          <div class="product-info"><div><h3>Golden mangoes</h3><p>Soft, sunny, simply lovely</p></div><span class="product-price">₹399 <small>/ 4 pcs</small></span></div>
+          <button class="add-button" type="button" data-product="Golden mangoes">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="boxes">
+          <div class="product-photo product-box"><span class="product-badge badge-green">A LITTLE OF EVERYTHING</span><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=800&q=85" alt="Assortment of seasonal fresh fruit"></div>
+          <div class="product-info"><div><h3>The happy fruit box</h3><p>A colourful weekly pick-me-up</p></div><span class="product-price">₹899 <small>/ box</small></span></div>
+          <button class="add-button" type="button" data-product="The happy fruit box">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="berries">
+          <div class="product-photo"><span class="product-badge badge-pink">FARM FAVOURITE</span><img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=800&q=85" alt="Fresh red strawberries"></div>
+          <div class="product-info"><div><h3>Ruby strawberries</h3><p>Sweet, fragrant & hand-picked</p></div><span class="product-price">₹299 <small>/ 250 g</small></span></div>
+          <button class="add-button" type="button" data-product="Ruby strawberries">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="tropical">
+          <div class="product-photo"><span class="product-badge badge-green">TROPICAL PICK</span><img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=800&q=85" alt="Fresh golden pineapple"></div>
+          <div class="product-info"><div><h3>Golden pineapple</h3><p>Bright, juicy & ready to slice</p></div><span class="product-price">₹179 <small>/ each</small></span></div>
+          <button class="add-button" type="button" data-product="Golden pineapple">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="orchard">
+          <div class="product-photo"><span class="product-badge">CRISP & CRUNCHY</span><img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=800&q=85" alt="Fresh red and green apples"></div>
+          <div class="product-info"><div><h3>Orchard apple mix</h3><p>Two crisp varieties, one happy bag</p></div><span class="product-price">₹279 <small>/ 6 pcs</small></span></div>
+          <button class="add-button" type="button" data-product="Orchard apple mix">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="orchard">
+          <div class="product-photo"><span class="product-badge badge-green">GROWN WITH CARE</span><img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=800&q=85" alt="Fresh green grapes on the vine"></div>
+          <div class="product-info"><div><h3>Sweet green grapes</h3><p>Seedless, snackable & refreshing</p></div><span class="product-price">₹229 <small>/ 500 g</small></span></div>
+          <button class="add-button" type="button" data-product="Sweet green grapes">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="tropical">
+          <div class="product-photo"><span class="product-badge badge-pink">COOL & REFRESHING</span><img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=85" alt="Fresh watermelon slices"></div>
+          <div class="product-info"><div><h3>Summer watermelon</h3><p>Cool, sweet & made for sharing</p></div><span class="product-price">₹199 <small>/ each</small></span></div>
+          <button class="add-button" type="button" data-product="Summer watermelon">Add to bag <span>+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-band">
+      <div class="story-photo" role="img" aria-label="Fruit being harvested at a sunny farm"></div>
+      <div class="story-copy"><p class="eyebrow">A LITTLE MORE ABOUT US</p><h2>Good fruit starts<br>with <em>good people.</em></h2><p>We work with small farms that grow fruit the thoughtful way. No shortcuts, no funny stuff—just delicious produce with a story worth sharing.</p><a class="text-link" href="services.html">Get to know us <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="newsletter section-wrap">
+      <div><p class="eyebrow">A FRESH NOTE FROM US</p><h2>Good things in your inbox.</h2><p>Seasonal picks, fruit tips, and the occasional juicy offer.</p></div>
+      <form class="newsletter-form"><label class="visually-hidden" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button class="button button-dark" type="submit">Count me in <span>→</span></button></form>
+      <p class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="home.html"><span class="brand-mark">✳</span> orchard<span>&co.</span></a><p>Fruit for the feel-good days.</p><div class="footer-links"><a href="services.html">Our services</a><a href="contact.html">Contact</a><a href="login.html">Log in</a></div><small>© 2026 Orchard & Co. Made with a little sunshine.</small></footer>
+</body>
+</html>
